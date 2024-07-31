@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\LoanDetails;
+use Illuminate\Http\Request;
+
+class LoanController extends Controller
+{
+    // show loan details
+    public function loan_details(){
+        $loanDetails  = LoanDetails::all();
+
+        return view('loan-details', compact('loanDetails'));
+    }
+
+    public function process_data(){
+        return view('process-data');
+    }
+
+    public function process_emi(){
+        return 'asd';
+    }
+
+
+}
