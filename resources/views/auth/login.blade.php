@@ -1,18 +1,18 @@
-@extends('layouts.app')
+@extends('layouts.main')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center mt-5">
-        <div class="col-md-8">
-           <div class="row">
-            <div class="col-lg-4">
+        <div class="col-md-9">
+           <div class="row align-items-center">
+            <div class="col-lg-6">
                 <div>
                     <img src="{{asset('assets/img/login.svg')}}" alt="" class="img-fluid">
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="card">
-                    <div class="card-header">{{ __('Login') }}</div>
+            <div class="col-lg-6">
+                <div class="card shadow border border-0">
+                    <div class="card-header fw-bold text-center fs-3">{{ __('Login') }}</div>
     
                     <div class="card-body">
                         <form method="POST" action="{{ route('login') }}">
@@ -60,9 +60,11 @@
     
                             <div class="row mb-0">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-primary">
+                                  <div class="text-center">
+                                    <button type="submit" class="btn-main w-50">
                                         {{ __('Login') }}
                                     </button>
+                                  </div>
     
                                  
                                 </div>
