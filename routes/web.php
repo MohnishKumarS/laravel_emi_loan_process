@@ -19,10 +19,12 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+// Route::redirect('/register','/login');
+
 Route::controller(LoanController::class)->group(function(){
     Route::get('loan-details','loan_details');
     Route::get('process-data','process_data');
-    Route::get('process-emi','process_emi');
+    Route::get('process-emi','process_emi')->name('emi.data');
 });
 
 Auth::routes();

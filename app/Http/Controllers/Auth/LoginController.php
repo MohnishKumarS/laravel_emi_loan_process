@@ -43,13 +43,13 @@ class LoginController extends Controller
         return 'username';
     }
 
-    protected function credentials(Request $request)
-    {
-        return [
-            'username' => $request->get('username'),
-            'password' => $request->get('password'),
-        ];
-    }
+    // protected function credentials(Request $request)
+    // {
+    //     return [
+    //         'username' => $request->get('username'),
+    //         'password' => $request->get('password'),
+    //     ];
+    // }
     // protected function sendFailedLoginResponse(Request $request)
     // {
     //     dd('Failed login attempt', $request->all());

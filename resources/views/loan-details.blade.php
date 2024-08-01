@@ -34,8 +34,8 @@
             @else
                 <tr>
                   <td colspan="6">
-                    <div class="text-danger py-5 text-center fw-bold">
-                      No data found...
+                    <div class="text-center">
+                      <img src="{{asset('assets/img/no-data.svg')}}" alt="no data" class="img-fluid" width="600px">
                     </div>
                   </td>
                 </tr>
