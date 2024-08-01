@@ -8,7 +8,7 @@
     <title>EMI loan process</title>
       <!-- CSRF Token -->
       <meta name="csrf-token" content="{{ csrf_token() }}">
-      {{-- <link rel="shortcut icon" href="{{asset('image/oxford-logo.jpg')}}" type="image/x-icon"> --}}
+      <link rel="shortcut icon" href="{{asset('assets/img/emi-logo.png')}}" type="image/x-icon">
     {{-- link css lib --}}
     @include('lib.css')
 
